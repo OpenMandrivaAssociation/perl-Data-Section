@@ -1,9 +1,9 @@
 %define upstream_name    Data-Section
-%define upstream_version 0.101620
+%define upstream_version 0.101621
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    read multiple hunks of data out of your DATA section
 License:    GPL+ or Artistic
