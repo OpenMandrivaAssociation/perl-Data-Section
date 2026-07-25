@@ -1,15 +1,15 @@
 %define upstream_name    Data-Section
-%define upstream_version 0.101621
+%define upstream_version 0.200008
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Read multiple hunks of data out of your DATA section
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/rjbs/Data-Section
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-Section-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
