@@ -1,15 +1,13 @@
 %define upstream_name    Data-Section
-%define upstream_version 0.200008
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.200008
+Release:	2
 
 Summary:	Read multiple hunks of data out of your DATA section
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Data-Section
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-Section-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Data-Section-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ line-oriented data in your module's DATA section. It was written to allow
 modules to store their own templates, but probably has other uses.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -76,8 +74,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sun Jul 12 2009 Jérôme Quelin <jquelin@mandriva.org> 0.91.820-1mdv2010.0
 + Revision: 395132
 - update to 0.091820
-- using %%perl_convert_version
-- fixed license field
+- using %0.200008 fixed license field
 
 * Fri Nov 07 2008 Guillaume Rousse <guillomovitch@mandriva.org> 0.005-1mdv2009.1
 + Revision: 300690
